@@ -1,0 +1,11 @@
+server:
+  port: 8201
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${GIT_URL}
+          ignoreLocalSshSettings: true
+          privateKey: ${SSH_KEY}
